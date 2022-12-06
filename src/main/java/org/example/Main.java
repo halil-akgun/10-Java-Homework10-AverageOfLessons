@@ -20,29 +20,29 @@ public class Main {
         System.out.print("your muzic grade: ");
         muzic = inp.nextInt();
 
-        if (math > 0 && math <= 100) {
+        if (math >= 0 && math <= 100) {
             totalGrade += math;
             totalLessons++;
         }
-        if (physics > 0 && physics <= 100) {
+        if (physics >= 0 && physics <= 100) {
             totalGrade += physics;
             totalLessons++;
         }
-        if (turkish > 0 && turkish <= 100) {
+        if (turkish >= 0 && turkish <= 100) {
             totalGrade += turkish;
             totalLessons++;
         }
-        if (chemistry > 0 && chemistry <= 100) {
+        if (chemistry >= 0 && chemistry <= 100) {
             totalGrade += chemistry;
             totalLessons++;
         }
-        if (muzic > 0 && muzic <= 100) {
+        if (muzic >= 0 && muzic <= 100) {
             totalGrade += muzic;
             totalLessons++;
         }
 
         average = totalGrade / totalLessons;
-        if (average > 55) {
+        if (average >= 55) {
             System.out.println("congratulations. you passed the class.");
         } else {
             System.out.println("you failed the class. see you again next year.");
